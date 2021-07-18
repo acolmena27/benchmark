@@ -14,7 +14,7 @@ jobs:
       - name: Run benchmark 
         run: npm install && npm run bench | tee output.txt
       - name: Store benchmark result 
-        uses: acolmena27/github-action-benchmark@v1
+        uses: acolmena/github-action-benchmark@v1
         with:
           name: Benchmark.js Benchmark 
           tool: 'benchmarkjs'
@@ -24,4 +24,4 @@ jobs:
           alert-threshold: '130%'
           comment on alert: true 
           fall-on-alert: true
-          alert-comment-cc-users: '@acolmena27'
+          alert-comment-cc-users: '@acolmena'
